@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { fetchRepos } from '../../service/repos-api'
-import reposlist from './reposlist'
+import ReposList from './ReposList'
 
 class ReposContainer extends Component{
 	constructor(props){
@@ -39,7 +39,7 @@ class ReposContainer extends Component{
 				type="search"
 				placeholder="Pesquisa Aqui"/>
 				</form>
-				<reposlist repos={this.state.repos}></reposlist>
+				<ReposList repos={this.state.repos}></ReposList>
 			</div>
 		)
 	}

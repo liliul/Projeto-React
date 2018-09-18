@@ -1,8 +1,8 @@
 import React from 'react'
 
-const reposlist = props => {
+const ReposList = props => {
 	return(<ul>
-		{props.state.repos.map(repo => (
+		{props.repos.map(repo => (
 			<li key={repo.id}>{repo.name}</li> 
 			))}
 					
@@ -10,4 +10,4 @@ const reposlist = props => {
 }
 
 
-export default reposlist
+export default ReposList
